@@ -1,0 +1,19 @@
+Kathryn Dutton
+CS290 - Spring 2015
+Assignment 3 Work Log
+
+Start: Sat, 18 Apr 2015 07:23 
+End: Sat, 18 Apr 2015 08:39
+Tasks: Clone assignment repository, push to new repository, try to figure out the date/time stamp received when git log --pretty=format is run, update log and push changes.
+
+Start: Sat, 18 Apr 2015 14:16:50
+End: Sat, 18 Apr 2015 19:31:52 -0400
+Tasks: Continue to research git log date issue (no success - later resolved via Piazza), work on functions.js and variables.js, work on objects.js. (Off and on, researching and working).
+
+Start: Sun, 19 Apr 2015 08:13:32 -0400
+End: Sun, 19 Apr 2015 13:19:16 -0400
+Tasks: Work on parseGit() function - working for all but date1, researched code for MessageLog object, completed objects.js. Asked about the date parsing test on Piazza.
+
+Start: Sun, 19 Apr 2015 14:01:05 -0400
+End: Sun, 19 Apr 2015 14:41:32 -0400
+Tasks: Step through parseGit() function to find error - not clearing all arrays (forgot one). Check all code again using JSLint and finalize comments. Update MessageLog object so all variables are member variables using "this".
