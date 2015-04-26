@@ -3,7 +3,7 @@
 <head>
 	<meta charset='utf-8'>
 	<title>List Recent GitHub Gists</title>
-	<script src='ajax.js'></script>
+	<script src='recentGists.js'></script>
 	<link rel='stylesheet' type='text/css' href='recentGists.css'> 
 </head>
 <body>
@@ -31,12 +31,17 @@
 	</form>
 
 	<!Search button>
-	<input type='button' value='Search' onclick='search_gists()'>
+	<input type='button' value='Search' onclick='addParams()'>
 
 	<!div id "gists">
-	<div id='gists'></div>
+	<div id='gists'>
+		<H3>Recent Gists</H3>
+		<H5>Click button to "favorite" a gist</H5>
+	</div>
 	<!div id "favored-gists">
-	<div id='favored-gists'></div>
+	<div id='favored-gists'>
+		<H3>Favorited Gists</H3>
+	</div>
 
 </body>
 </html>

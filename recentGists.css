@@ -9,3 +9,7 @@ form {
 input[type=button] {
 	margin-left: 25px;
 }
+
+#gists, #favored-gists {
+	display: inline;
+}
