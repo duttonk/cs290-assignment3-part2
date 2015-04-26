@@ -1,0 +1,11 @@
+#numForm, H3 {
+	display: inline;
+}
+
+form {
+	padding: 25px;
+}
+
+input[type=button] {
+	margin-left: 25px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>List Recent GitHub Gists</title>
+	<script src='ajax.js'></script>
+	<link rel='stylesheet' type='text/css' href='recentGists.css'> 
+</head>
+<body>
+	<H1 id='heading'>Find Recent GitHub Gists</H1>
+
+	<!EC Select number of pages of results to display>
+	<form id='numForm'>
+		<H3 id='numGists'>Select the number of page results to display:</H3>
+		<select>
+			<option value='1'>1</option>
+			<option value='2'>2</option>
+			<option value='3'>3</option>
+			<option value='4'>4</option>
+			<option value='5'>5</option>
+		</select>
+	</form>
+
+	<!EC Checkboxes to choose Gist languages - Python, JSON, JS, SQL>
+	<form id='langForm'>
+		<H3 id='language'>Filter by language:</H3>
+		<input type='checkbox' name='Python'>Python
+		<input type='checkbox' name='JSON'>JSON
+		<input type='checkbox' name='JavaScript'>JavaScript
+		<input type='checkbox' name='SQL'>SQL
+	</form>
+
+	<!Search button>
+	<input type='button' value='Search' onclick='search_gists()'>
+
+	<!div id "gists">
+	<div id='gists'></div>
+	<!div id "favored-gists">
+	<div id='favored-gists'></div>
+
+</body>
+</html>
