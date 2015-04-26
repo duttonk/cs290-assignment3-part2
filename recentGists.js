@@ -33,25 +33,31 @@ function loadResponse() {
 	var responseObj = JSON.parse(localStorage.getItem('localResponse'));
 
 	var gistList = document.createElement('ul');
-//	var listItem = document.createElement('li');
-	var description;
+	var gistDesc;
 	var descUrl;
+	var gistID;
 /*	var language;*/
 
 	for(var i = 0; i < responseObj.length; i++) {
 		descUrl = responseObj[i].html_url;
 		console.log(descUrl);
-		description = responseObj[i].description;
-		console.log(description);
+		gistDesc = responseObj[i].description;
+		console.log(gistDesc);
+		gistID = generateId(i);
+		console.log(gistID);
 
 		var a = document.createElement('a');
 		a.setAttribute('href', descUrl);
 
-		if(description === "" || description === null) {
-			description = 'No description';
+		if(gistDesc === "" || gistDesc === null || gistDesc === undefined) {
+			gistDesc = 'No description';
 		}
 
-		a.innerHTML = description;
+		a.innerHTML = gistDesc;
+		var fbutton = document.createElement('button');
+		fbutton.innerHTML = 'Add to Favorites';
+
+		a.appendChild(fbutton);
 
 		var listItem = document.createElement('li');
 		listItem.appendChild(a);
@@ -66,4 +72,14 @@ function loadResponse() {
 
 	var displayGistList = document.getElementById('gists');
 	displayGistList.appendChild(gistList);
+}
+
+function generateId(num) {
+	return('gist' + num.toString());
+}
+
+function GistObject(gistDesc, gistId, descUrl) {
+	this.gistDesc = gistDesc;
+	this.gistId = gistId;
+	this.descUrl = descUrl;
 }

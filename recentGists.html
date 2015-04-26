@@ -31,17 +31,26 @@
 	</form>
 
 	<!Search button>
-	<input type='button' value='Search' onclick='addParams()'>
+	<input type='button' value='Search' onclick='search_gists()'><br>
 
 	<!div id "gists">
-	<div id='gists'>
-		<H3>Recent Gists</H3>
-		<H5>Click button to "favorite" a gist</H5>
-	</div>
-	<!div id "favored-gists">
-	<div id='favored-gists'>
-		<H3>Favorited Gists</H3>
-	</div>
+	<TABLE>
+		<TR>
+			<TD><H3>Recent Gists</H3></TD>
+		</TR>
+		<TR>
+			<TD><div id='gists'></div></TD>
+		</TR>
+	</TABLE>
 
+	<TABLE>
+		<TR>
+			<TD><H3>Favorited Gists</H3></TD>
+		</TR>
+		<TR>
+			<TD><div id='favored-gists'></div></TD>
+		</TR>
+	</TABLE>
+	
 </body>
 </html>
