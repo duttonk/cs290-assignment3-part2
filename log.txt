@@ -35,3 +35,7 @@ Tasks: Create git repository and perform initial commit. Begin coding HTML porti
 Start: Sun, 26 Apr 7:30:00 -0400
 End: Sun, 26 Apr 08:10:09 -0400
 Tasks: Finish HTML page, add some styling via css page, change file names to reflect project goal rather than generalities. Update log.
+
+Start: Sun, 26 Apr 09:36:05 -0400
+End: Sun, 26 Apr 23:00:00 -0400
+Tasks: Work on JS to make requests from GitHub, parse responses, create dynamic list within HTML table, try (and fail) to get the "add to favorites" functionality to work, try (and fail) to get the "select languages" functionality to work. Throughout the day I researched, watched videos, and attempted to find working examples. I feel like something small (or perhaps large) is off in my approach to the problem, but now I have to get some sleep so I can proctor standardized tests in the morning for my day job. Added files to OSU server and called it a day.
